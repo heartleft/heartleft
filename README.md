@@ -2,7 +2,7 @@
 
 This is an open source blogging program.
 
-demo: http://blog.910216.com/
+demo: http://heartleft.com
 
 
 

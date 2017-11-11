@@ -1,4 +1,4 @@
-# heartleft
+# HeartLeft
 
 This is an open source blogging program.
 

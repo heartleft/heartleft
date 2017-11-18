@@ -11,6 +11,7 @@ def index():
         form.name.data = ''
     return render_template('index.html', form=form, name=name)
 
+
 def login():
     form = LoginForm()
     if form.validate_on_submit():

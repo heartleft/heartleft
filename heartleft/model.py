@@ -1,10 +1,6 @@
-from flask.ext.sqlalchemy import SQLAlchemy
-from myapp import app
-  
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:example@localhost:3306/test?charset=utf8'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
-db = SQLAlchemy(app)
- 
+from heartleft.server import db
+
+
 class Role(db.Model):
     __tablename__ = "roles"
     id = db.Column(db.Integer, primary_key=True)

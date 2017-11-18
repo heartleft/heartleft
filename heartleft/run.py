@@ -1,15 +1,11 @@
-from heartleft.admin.api.urls import admin_mgr, file_mgr
-from heartleft.admin.service.server import BlogServer
-from flask_script import Manager
+#!/usr/bin/env python
 
+from flask.ext.bootstrap import Bootstrap
+from urls import m_hello_world
+from myapp import app
 
-def main():
-    server = BlogServer(import_name="heartleft",
-                        template_folder='admin/templates',
-                        static_folder='admin/static')
+app.register_blueprint(m_hello_world)
+app.config['SECRET_KEY'] = 'hard to guess string'
+Bootstrap(app)
 
-    server.register_blueprint(admin_mgr)
-    server.register_blueprint(file_mgr)
-    # TODO(zpzhou): need setup log
-    manager = Manager(server)
-    manager.run()
+app.run(host='0.0.0.0', port=80, debug='true')

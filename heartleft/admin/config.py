@@ -1,1 +1,0 @@
-ROOT_DIR="/usr/local/heartleft/htdocs"

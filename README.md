@@ -4,7 +4,7 @@ This is an open source blogging program.
 
 demo: http://heartleft.com
 
-release: https://github.com/heartleft/heartleft/release
+release: https://github.com/heartleft/heartleft/releases
 
 
 

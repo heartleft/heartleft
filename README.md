@@ -2,7 +2,7 @@
 
 This is an open source blogging program.
 
-demo: http://heartleft.com
+demo: [http://heartleft.com](http://heartleft.com?_blank)
 
 release: https://github.com/heartleft/heartleft/releases
 
